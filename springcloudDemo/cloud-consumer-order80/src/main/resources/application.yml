@@ -2,10 +2,17 @@ server:
   port: 80
 spring:
   application:
-    name: cloud-payment-service
+    name: cloud-order-service
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
     url: jdbc:mysql://localhost:3306/springcloud?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: root
+
+eureka:
+  client:
+    register-with-eureka: true     #true表示向注册中心注册自己。
+    fetch-registry: true      #去检索已有的注册信息
+    service-url:
+      defaultZone: http://localhost:7001/eureka

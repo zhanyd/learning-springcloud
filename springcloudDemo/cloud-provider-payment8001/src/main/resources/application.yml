@@ -11,6 +11,13 @@ spring:
     username: root
     password: root
 
+eureka:
+  client:
+    register-with-eureka: true     #true表示向注册中心注册自己。
+    fetch-registry: true      #去检索已有的注册信息
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   type-aliases-package: com.zhanyd.springcloud.entities    # 所有Entity别名类所在包
