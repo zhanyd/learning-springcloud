@@ -5,12 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/springcloudDemo/pom.xml" />
         <option value="$PROJECT_DIR$/springcloudDemo/cloud-eureka-server7001/pom.xml" />
-      </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
         <option value="$PROJECT_DIR$/springcloudDemo/cloud-api-commons/pom.xml" />
-      </set>
+      </list>
     </option>
   </component>
   <component name="ProjectPlainTextFileTypeManager">
